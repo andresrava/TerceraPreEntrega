@@ -11849,6 +11849,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 @font-face {
   font-family: "ejemploMexico";
   src: url(../resources/fonts/¡Viva\ México\ cabrones!.ttf);
@@ -11871,14 +11874,7 @@ header {
 }
 header h2, header .h2 {
   text-align: center;
-}
-header div {
-  height: 100%;
-  width: auto;
-  display: inline-block;
-}
-header div p {
-  margin-bottom: 0%;
+  margin-top: 15px;
 }
 
 #logo {
@@ -11886,7 +11882,6 @@ header div p {
 }
 
 #title {
-  text-align: center;
   grid-area: title;
 }
 
@@ -11928,13 +11923,30 @@ main div section nav div a {
   border: none;
 }
 
+.carousel_card {
+  height: 100%;
+}
+
+.carousel_card_img {
+  height: 80%;
+}
+
 footer {
   height: 5vh;
   width: 100vw;
   background-color: rgba(210, 105, 30, 0.329);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+footer div {
+  height: 100%;
+  display: inline-block;
+}
+
+.logo {
+  height: 100%;
 }
 
 body {
@@ -11944,18 +11956,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "ejemploMexico";
-}
-
-.logo {
-  height: 100%;
-}
-
-.carousel_card {
-  height: 100%;
-}
-
-.carousel_card_img {
-  height: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */

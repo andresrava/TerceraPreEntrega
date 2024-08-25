@@ -17,16 +17,8 @@ header{
     }
     h2 {
         text-align: center;
+        margin-top: 15px;
     }
-    div {
-        height: 100%;
-        width: auto;
-        display: inline-block;
-        p {
-            margin-bottom: 0%;
-        }
-    }
-    
 }
 
 #logo {
@@ -34,7 +26,6 @@ header{
   }
   
 #title {
-    text-align: center;
     grid-area: title;
   }
 
