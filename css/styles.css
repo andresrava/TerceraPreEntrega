@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+@font-face {
+  font-family: "ejemploMexico";
+  src: url(../resources/fonts/¡Viva\ México\ cabrones!.ttf);
+} 
+
+body {
+    height: 100vh;
+    width: auto;
+    background-image: url(../resources/images/travel-2611611_640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "ejemploMexico";
+}
+
+
+p {
+  margin-bottom: 0%;
+  overflow:visible;
+}
+
+h3 {
+  color: brown;
+}
+
+h5 {
+  overflow:visible;
+}
+
+section {
+  height: 80vh;
+  width: 100%;
+  /* Para que no se vea la barra de scroll */
+  overflow: overlay;  
+}
+
+div {
+  height: 100%;
+  width: auto;
+
+}
+
+header {
+  height: 15vh;
+  width: 100%;
+    background-color: rgba(210, 105, 30, 0.329);
+  display: grid;
+  grid-template-areas: 
+    "logo title search"
+    "logo title login";
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 15vh auto 25%; 
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#title {
+  text-align: center;
+  grid-area: title;
+}
+
+#search {
+  grid-area: search; 
+}
+
+#login {
+  grid-area: login;
+  text-align: center;
+}
+
+
+/* Formatos de Main */
+
+main {
+    height: 80vh;
+    width: 100%;
+  }
+
+/* Formatos de Main - Botones */
+ nav {
+    height: 100%;
+ } 
+
+ .btn_gde {
+  background-color: rgba(210, 105, 30, 0.26);
+  border: 5px solid rgb(204, 99, 24);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .btn_gde:hover {
+  background-color: rgba(210, 105, 30, 0.63);
+  border: 5px solid rgb(156, 72, 13);
+ }
+
+ .btn_gde:active {
+  background-color: rgba(210, 105, 30, 0.63);
+ }
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+ 
+/* Formatos de Main - Contenido */
+.card-body {
+  width: auto;
+
+}
+
+.carousel_card {
+  background-color: rgba(210, 105, 30, 0.418); 
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel_card_img {
+  object-fit: scale-down;
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+}
+
+/* Formatos del Footer */
+
+footer {
+    height: 5vh;
+    width: 100vw;
+    background-color: rgba(210, 105, 30, 0.329);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+   
+.logo {
+  height: 100%;
+}
+
+
+@media screen and (max-width: 990px) {
+  section {
+    height: 40vh;
+  }
+  header {
+    grid-template-areas: 
+    "logo title title"
+    "logo login search";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 15vh 50% 50%;
+  }
+}
