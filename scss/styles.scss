@@ -1,7 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "./base/reset";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./utilidades/mixins";
+@import "./base/typos";
+@import "./estructura/header";
+@import "./estructura/main";
+@import "./estructura/footer";
+
 
 body {
     height: 100vh;
@@ -9,96 +13,16 @@ body {
     background-image: url(../resources/images/travel-2611611_640.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    header{
-        height: 15vh;
-        grid-template-rows: 50% 50%;
-        background-color: rgba(210, 105, 30, 0.329);
-        display: grid;
-        grid-template-areas: 
-            "logo title search"
-            "logo title login";
-        grid-template-columns: 15vh auto 25%; 
-        width: 100%;
-        div {
-            height: 100%;
-            width: auto;
-            display: inline-block;
-            p {
-                margin-bottom: 0%;
-            }
-        }
-        #logo {
-              grid-area: logo;
-            }
-            
-        #title {
-              text-align: center;
-              grid-area: title;
-            }
-
-        #search {
-            grid-area: search; 
-            }
-
-        #login {
-              grid-area: login;
-              text-align: center;
-            }
-        
-    }
-    main {
-        height: 80vh;
-        width: 100%;
-        div {
-            section {
-                height: 80vh;
-                width: 100%;
-                overflow: overlay;
-                article {
-                    height: 100%;
-                    display: block;
-                }
-                nav {
-                    height: 100%;
-                    div {
-                        a {
-                            text-decoration: none;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    footer {
-        height: 5vh;
-        width: 100vw;
-        background-color: rgba(210, 105, 30, 0.329);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    font-family: "ejemploMexico";
 }
+    
+   
 .logo {
     height: 100%;
   }
 
 
 
-
-  @media screen and (max-width: 990px) {
-
-    main section {
-        height: 40vh;
-    }
-    main header {
-        grid-template-areas: 
-        "logo title title"
-        "logo login search";
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 15vh 50% 50%;
-    }
-    }   
 
 
 .carousel_card {

@@ -1,0 +1,48 @@
+header{
+    height: 15vh;
+    grid-template-rows: 50% 50%;
+    background-color: rgba(210, 105, 30, 0.329);
+    display: grid;
+    grid-template-areas: 
+        "logo title search"
+        "logo title login";
+    grid-template-columns: 15vh auto 25%; 
+    width: 100%;
+    @include tablet() {
+        grid-template-areas: 
+                    "logo title title"
+                    "logo login search";
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 15vh 50% 50%;
+    }
+    h2 {
+        text-align: center;
+    }
+    div {
+        height: 100%;
+        width: auto;
+        display: inline-block;
+        p {
+            margin-bottom: 0%;
+        }
+    }
+    
+}
+
+#logo {
+    grid-area: logo;
+  }
+  
+#title {
+    text-align: center;
+    grid-area: title;
+  }
+
+#search {
+  grid-area: search; 
+  }
+
+#login {
+    grid-area: login;
+    text-align: center;
+  }

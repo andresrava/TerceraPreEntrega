@@ -1,0 +1,30 @@
+main {
+    height: 80vh;
+    width: 100%;
+    div {
+        section {
+            height: 80vh;
+            width: 100%;
+            overflow: overlay;
+            @include tablet() {
+                height: 40vh;
+            }
+            article {
+                height: 100%;
+                display: block;
+            }
+            nav {
+                height: 100%;
+                div {
+                    a {
+                        text-decoration: none;
+                        text-align: center;
+                        color: rgba(210, 105, 30, 0.555);
+                        height: 100%;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
