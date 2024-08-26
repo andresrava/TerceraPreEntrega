@@ -1,7 +1,7 @@
 header{
     height: 15vh;
     grid-template-rows: 50% 50%;
-    background-color: rgba(210, 105, 30, 0.329);
+    background-color: $para-la-agencia-de-viajes-1-rgba;
     display: grid;
     grid-template-areas: 
         "logo title search"
@@ -15,9 +15,10 @@ header{
         grid-template-rows: 50% 50%;
         grid-template-columns: 15vh 50% 50%;
     }
-    h2 {
+    h1 {
         text-align: center;
         margin-top: 15px;
+        color: $para-la-agencia-de-viajes-6-rgba;
     }
 }
 

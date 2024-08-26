@@ -1,11 +1,11 @@
 footer {
     height: 5vh;
     width: 100vw;
-    background-color: rgba(210, 105, 30, 0.329);
+    background-color: $para-la-agencia-de-viajes-1-rgba;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     div {
         height: 100%;
         display: inline-block;

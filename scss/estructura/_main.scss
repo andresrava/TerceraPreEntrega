@@ -16,12 +16,17 @@ main {
             nav {
                 height: 100%;
                 div {
+                    height: 100%;
+                    padding: 10px;
                     a {
                         text-decoration: none;
-                        text-align: center;
                         color: rgba(210, 105, 30, 0.555);
                         height: 100%;
                         border: none;
+                        align-items: center;
+                        h3 {
+                            color: $para-la-agencia-de-viajes-6-rgba;
+                        }
                     }
                 }
             }
@@ -36,4 +41,16 @@ main {
   .carousel_card_img {
     height: 80%;
   }
-  
+
+  .btn_gde {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $para-la-agencia-de-viajes-1-rgba;
+    border: 5px solid $para-la-agencia-de-viajes-2-rgba;
+
+    &:hover {
+        background-color: $para-la-agencia-de-viajes-2-rgba;
+        border: 7px solid $para-la-agencia-de-viajes-3-rgba;
+    }
+  }

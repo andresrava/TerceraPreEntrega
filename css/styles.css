@@ -11859,7 +11859,7 @@ textarea.form-control-lg {
 header {
   height: 15vh;
   grid-template-rows: 50% 50%;
-  background-color: rgba(210, 105, 30, 0.329);
+  background-color: rgba(216, 90, 22, 0.644);
   display: grid;
   grid-template-areas: "logo title search" "logo title login";
   grid-template-columns: 15vh auto 25%;
@@ -11872,9 +11872,10 @@ header {
     grid-template-columns: 15vh 50% 50%;
   }
 }
-header h2, header .h2 {
+header h1, header .h1 {
   text-align: center;
   margin-top: 15px;
+  color: rgb(80, 33, 8);
 }
 
 #logo {
@@ -11915,12 +11916,19 @@ main div section article {
 main div section nav {
   height: 100%;
 }
+main div section nav div {
+  height: 100%;
+  padding: 10px;
+}
 main div section nav div a {
   text-decoration: none;
-  text-align: center;
   color: rgba(210, 105, 30, 0.555);
   height: 100%;
   border: none;
+  align-items: center;
+}
+main div section nav div a h3, main div section nav div a .h3 {
+  color: rgb(80, 33, 8);
 }
 
 .carousel_card {
@@ -11931,14 +11939,26 @@ main div section nav div a {
   height: 80%;
 }
 
+.btn_gde {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(216, 90, 22, 0.644);
+  border: 5px solid rgba(182, 75, 18, 0.836);
+}
+.btn_gde:hover {
+  background-color: rgba(182, 75, 18, 0.836);
+  border: 7px solid rgb(224, 94, 23);
+}
+
 footer {
   height: 5vh;
   width: 100vw;
-  background-color: rgba(210, 105, 30, 0.329);
+  background-color: rgba(216, 90, 22, 0.644);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 footer div {
   height: 100%;
