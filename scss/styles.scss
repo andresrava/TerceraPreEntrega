@@ -1,11 +1,13 @@
 @import "./base/reset";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "./utilidades/variables";
 @import "./utilidades/mixins";
 @import "./utilidades/colors";
 @import "./base/typos";
 @import "./estructura/header";
 @import "./estructura/main";
 @import "./estructura/footer";
+
 
 
 body {
