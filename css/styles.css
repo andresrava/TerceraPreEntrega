@@ -11909,9 +11909,8 @@ main div section {
     height: 40vh;
   }
 }
-main div section article {
-  height: 100%;
-  display: block;
+main div section p {
+  color: rgb(80, 33, 8);
 }
 main div section nav {
   height: 100%;
@@ -11931,14 +11930,6 @@ main div section nav div a h3, main div section nav div a .h3 {
   color: rgb(80, 33, 8);
 }
 
-.carousel_card {
-  height: 100%;
-}
-
-.carousel_card_img {
-  height: 80%;
-}
-
 .btn_gde {
   display: flex;
   flex-direction: column;
@@ -11949,6 +11940,10 @@ main div section nav div a h3, main div section nav div a .h3 {
 .btn_gde:hover {
   background-color: rgba(182, 75, 18, 0.836);
   border: 7px solid rgb(224, 94, 23);
+}
+.btn_gde:focus-visible {
+  background-color: rgb(224, 94, 23);
+  border: 7px solid rgba(148, 61, 15, 0.603);
 }
 
 footer {
@@ -11969,6 +11964,27 @@ footer div {
   height: 100%;
 }
 
+.btn_gde {
+  height: 30vh;
+}
+.btn_gde a {
+  color: rgb(80, 33, 8);
+  font-size: xx-large;
+}
+.btn_gde:hover {
+  animation-name: gira;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+@keyframes gira {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   height: 100vh;
   width: auto;

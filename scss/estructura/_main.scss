@@ -6,13 +6,15 @@ main {
             height: 80vh;
             width: 100%;
             overflow: overlay;
+            // Encontré esta solución porque no respondía a la media query
             @include tablet() {
                 height: 40vh;
             }
-            article {
-                height: 100%;
-                display: block;
-            }
+            
+            p {
+                color: $para-la-agencia-de-viajes-6-rgba;
+            } 
+
             nav {
                 height: 100%;
                 div {
@@ -34,14 +36,6 @@ main {
     }
 }
 
-.carousel_card {
-    height: 100%;
-  }
-  
-  .carousel_card_img {
-    height: 80%;
-  }
-
   .btn_gde {
     display: flex;
     flex-direction: column;
@@ -52,5 +46,9 @@ main {
     &:hover {
         background-color: $para-la-agencia-de-viajes-2-rgba;
         border: 7px solid $para-la-agencia-de-viajes-3-rgba;
+    }
+    &:focus-visible {
+        background-color: $para-la-agencia-de-viajes-3-rgba;
+        border: 7px solid $para-la-agencia-de-viajes-4-rgba;
     }
   }
